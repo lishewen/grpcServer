@@ -11,6 +11,13 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.24.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="openssl.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
